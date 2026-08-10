@@ -51,7 +51,21 @@ export default function JobsList({ jobs, onSelectJob }: JobsListProps) {
                     placeholder="Search by address, client, or job number"
                     className="w-full rounded-md border border-[#00000022] bg-white px-4 py-2.5 font-bebas text-xs uppercase tracking-wider text-[#111111] outline-none placeholder:text-[#00000066] focus:border-[#B8860B] focus:ring-2 focus:ring-[#B8860B33] sm:text-sm"
                 />
-                <div className="hidden w-48 rounded-md border border-[#00000022] bg-white sm:block" />
+                <div className="hidden w-48 rounded-md border border-[#DED8CE] bg-white sm:block">
+                    <select className="w-full bg-transparent p-2 text-[#616161] text-sm font-medium outline-none">
+                        <option value="#616161" className="text-[#616161] text-sm font-medium">Select 1</option>
+                        <option value="option1" className="text-[#616161] text-sm font-medium">
+                            Select 2
+                        </option>
+                        <option value="option2" className="text-[#616161] text-sm font-medium">
+                            Select 3
+                        </option>
+                        <option value="option3" className="text-[#616161] text-sm font-medium">
+                            Select 4
+                        </option>
+                    </select>
+                </div>
+
             </div>
 
             <div className="space-y-4">

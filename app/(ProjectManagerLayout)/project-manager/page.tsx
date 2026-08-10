@@ -8,23 +8,28 @@ const kpis = [
   { label: "Monthly Earning", value: "$900", trend: "+3.6% vs yesterday", icon: DollarSign },
 ];
 
+
 const mainModules = [
   {
+    link: "/inspections",
     title: "Right-On Inspections",
     desc: "Phase checklists with pass, deficiency, N/A, photos, and locked reports.",
     icon: CheckSquare,
   },
   {
+    link: "/vendor-performance",
     title: "Vendor Performance",
     desc: "Track installed correctly, deficiencies, close time, and right-on scores by vendor.",
     icon: Truck,
   },
   {
+    link: "/open-deficiencies",
     title: "Open Deficiencies",
     desc: "Submit corrections, verify, close, or send back for rework.",
     icon: AlertTriangle,
   },
 ];
+
 
 export default function ProjectManagerDashboard() {
   return (
@@ -81,7 +86,7 @@ export default function ProjectManagerDashboard() {
                       {mod.desc}
                     </p>
                   </div>
-                  <Link href="#" className="font-bebas mt-4 inline-flex items-center gap-1.5 text-[14px] font-bold uppercase tracking-wider text-[#B8890F] hover:underline">
+                  <Link href={mod.link} className="font-bebas mt-4 inline-flex items-center gap-1.5 text-[14px] font-bold uppercase tracking-wider text-[#B8890F] hover:underline">
                     Open <ArrowRight className="h-4 w-4" />
                   </Link>
                 </div>

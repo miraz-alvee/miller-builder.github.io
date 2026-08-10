@@ -47,7 +47,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
               <BreadcrumbList>
                 <BreadcrumbItem className="hidden md:block">
                   <BreadcrumbLink href="#">
-                    Superintendent Dashboard
+                    Project Manager
                   </BreadcrumbLink>
                 </BreadcrumbItem>
                 <BreadcrumbSeparator className="hidden md:block" />
